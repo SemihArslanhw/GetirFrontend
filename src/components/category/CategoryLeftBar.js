@@ -9,20 +9,27 @@ function CategoryLeftBar() {
   const [loading, setLoading] = React.useState(true);
 
   useEffect(() => {
+    
     getAllSuperCategories();
   }, []);
 
   const getAllSuperCategories = async() => {
    await api.getAllSuperCategories().then(res => {
      setSuperCategories(res.data.data);
+     
       setLoading(false);
     });
   }
 
-  return <div className="flex flex-col w-2/12 h-fit p-4 ">{loading ? <div>Category Comp</div> :
+  return <div className='w-3/12 p-2 min-w-fit font-sans text-base h-fit flex flex-col'>
+    <p>Kategoriler</p>
+    <div className="flex flex-col w-full h-fit p-4 gap-2">
+    
+    {loading ? <div>Category Comp</div> :
     superCategories.map(superCategory => {
       return <LeftBarCategoryComponents  key={superCategory.categoryId} categoryData={superCategory} ></LeftBarCategoryComponents>
-    })}</div>;
+    })}</div>
+    </div>;
 }
 
 export default CategoryLeftBar;

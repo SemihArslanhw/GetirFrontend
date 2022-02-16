@@ -11,8 +11,8 @@ function CategoryComp() {
    
 
  <CategoryLeftBar/>
- <CategoryBasket/>
 <CategoryBody/>
+<CategoryBasket/>
   </div>;
     
   
