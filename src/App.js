@@ -14,7 +14,7 @@ function App() {
         <BrowserRouter>
         <Header/>
         <Routes>
-          <Route path="/" element={<Home/>} />
+         <Route path="/" element={<Home/>} /> 
           <Route path="/kategori" element={<Category/>} />
           <Route path="/kategori/:categoryName" element={<Category/>} />
           <Route path="/kategori/:categoryName/:subCategoryName" element={<Category/>} />
