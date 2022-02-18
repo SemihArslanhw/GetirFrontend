@@ -4,7 +4,7 @@ import * as api from '../../api/index';
 import LeftBarCategoryComponents from './LeftBarCategoryComponents/LeftBarCategoryComponents';
 
 function CategoryLeftBar() {
-   
+  
   const [superCategories, setSuperCategories] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
@@ -12,6 +12,7 @@ function CategoryLeftBar() {
     
     getAllSuperCategories();
   }, []);
+  
 
   const getAllSuperCategories = async() => {
    await api.getAllSuperCategories().then(res => {
@@ -21,8 +22,8 @@ function CategoryLeftBar() {
     });
   }
 
-  return <div className='w-96 p-2 sticky bg-slate-100 rounded-lg min-w-fit font-sans text-base h-fit flex flex-col'>
-    <p>Kategoriler</p>
+  return <div  className='w-96  px-4  bg-slate-100 rounded-lg min-w-fit font-sans text-base h-screen flex flex-col'>
+    <p className='p-2'>Kategoriler</p>
     <div className="flex flex-col w-full h-fit p-4 gap-2">
     
     {loading ? <div>Category Comp</div> :

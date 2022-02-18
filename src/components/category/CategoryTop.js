@@ -1,9 +1,10 @@
 import React from 'react'
+import CategoryTopSlider from './CategoryTopSlider/CategoryTopSlider'
 
 function CategoryTop() {
   return (
     <div className='p-4 flex w-fit gap-20 '>
-        <div className='flex w-20 items-center gap-4'>
+     <div className='flex w-20 items-center gap-4'>
             <img className='h-10 w-10' src="https://getir.com/_next/static/images/bag-3312fc73968345e26f3f610d4f4440c5.svg"></img>
             <div className='flex flex-col'>
                 <p className='text-sm text-gray-500'>MİNİMUM</p>
@@ -19,6 +20,7 @@ function CategoryTop() {
             </div>
 
         </div>
+       
     </div>
   )
 }

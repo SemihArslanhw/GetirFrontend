@@ -7,10 +7,8 @@ function LeftBarCategoryComponents(categoryDatas) {
   const params = useParams();
   const categoryName = params.categoryName;
   const [openSubCategory, setOpenSubCategory] = React.useState(false);
-  console.log(openSubCategory)
-    useEffect(() => {
-      console.log(categoryDatas);
-    }, []);
+  
+    
   return (
     <div   className='cursor-pointer transition-all  flex flex-col w-full '>
     <div className='w-full flex justify-between items-center gap-2' onClick={()=>{navigate("/kategori/" + categoryDatas.categoryData.categoryName + "/" + categoryDatas.categoryData?.catogeries[0].categoryName);setOpenSubCategory(!openSubCategory)}}>

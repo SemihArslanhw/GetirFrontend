@@ -1,6 +1,7 @@
 import CategoryBasket from "./CategoryBasket";
 import CategoryBody from "./CategoryBody";
 import CategoryLeftBar from "./CategoryLeftBar";
+import CategorySlider from "./CategorySlider";
 import CategoryTop from "./CategoryTop";
 
 
@@ -8,8 +9,9 @@ function CategoryComp() {
  
   
 
-  return  <div className="flex flex-col container mx-auto gap-10 ">
+  return  <div className="flex flex-col pt-32 container mx-auto gap-3 ">
    <CategoryTop/>
+   <CategorySlider/>
 <div className="flex gap-10">
  <CategoryLeftBar/>
 <CategoryBody/>
