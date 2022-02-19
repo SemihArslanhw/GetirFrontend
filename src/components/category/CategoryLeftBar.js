@@ -22,7 +22,7 @@ function CategoryLeftBar() {
     });
   }
 
-  return <div  className='w-96  px-4  bg-slate-100 rounded-lg min-w-fit font-sans text-base h-screen flex flex-col'>
+  return <div  className='w-96  px-4 sticky top-32 bg-slate-100 rounded-lg min-w-fit font-sans text-base h-fit block flex-col'>
     <p className='p-2'>Kategoriler</p>
     <div className="flex flex-col w-full h-fit p-4 gap-2">
     

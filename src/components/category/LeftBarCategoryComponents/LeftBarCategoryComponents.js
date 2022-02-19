@@ -16,7 +16,7 @@ function LeftBarCategoryComponents(categoryDatas) {
       <p className='w-full '>{categoryDatas.categoryData.categoryName} </p>
       <p className='transition-all ease-in-out'>{openSubCategory ? ">" : "<"}</p>
       </div>
-      {openSubCategory  ? <div className='flex flex-col ml-12 text-sm my-2 h-fit gap-2'>
+      {categoryName === categoryDatas.categoryData.categoryName  ? <div className='flex flex-col ml-12 text-sm my-2 h-fit gap-2'>
        {categoryDatas.categoryData.catogeries?.map((subCategory)=>{
         
         return <p onClick={()=>{navigate("/kategori/" + categoryDatas.categoryData.categoryName + "/" + subCategory.categoryName)}} key={subCategory.categoryId}>{subCategory.categoryName}</p>

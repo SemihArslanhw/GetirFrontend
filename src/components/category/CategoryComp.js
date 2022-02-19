@@ -9,7 +9,7 @@ function CategoryComp() {
  
   
 
-  return  <div className="flex flex-col pt-32 container mx-auto gap-3 ">
+  return  <div className="block flex-col relative pt-32 container mx-auto gap-3 ">
    <CategoryTop/>
    <CategorySlider/>
 <div className="flex gap-10">
